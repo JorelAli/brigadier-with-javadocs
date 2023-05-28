@@ -61,6 +61,11 @@ public class SuggestionsBuilder {
         return remaining;
     }
 
+    /**
+     * Returns the text that remains untouched by the suggestions in lowercase
+     *
+     * @return the text that remains untouched by the suggestions in lowercase
+     */
     public String getRemainingLowerCase() {
         return remainingLowerCase;
     }

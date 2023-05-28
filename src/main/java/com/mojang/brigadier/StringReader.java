@@ -117,6 +117,15 @@ public class StringReader implements ImmutableStringReader {
         return c >= '0' && c <= '9' || c == '.' || c == '-';
     }
 
+    /**
+     * Checks if the character is a allowed as the start of a quoted string.
+     * 
+     * <em>Currently</em> allowed characters are:<br>
+     * {@code ["'"]} (as a regular expression set)
+     *
+     * @param c the character to check
+     * @return true if the character is allowed as the start of a quoted string
+     */
     public static boolean isQuotedStringStart(char c) {
         return c == SYNTAX_DOUBLE_QUOTE || c == SYNTAX_SINGLE_QUOTE;
     }
