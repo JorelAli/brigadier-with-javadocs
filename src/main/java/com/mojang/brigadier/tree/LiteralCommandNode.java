@@ -20,6 +20,13 @@ import java.util.Locale;
 import java.util.concurrent.CompletableFuture;
 import java.util.function.Predicate;
 
+/**
+ * An {@link CommandNode} that is triggered by a literal (i.e. fixed) keyword.
+ * <p>
+ * An example would be a command like "ping", that is identified by its keyword.
+ *
+ * @param <S> the type of the command source
+ */
 public class LiteralCommandNode<S> extends CommandNode<S> {
     private final String literal;
     private final String literalLowerCase;
@@ -30,6 +37,11 @@ public class LiteralCommandNode<S> extends CommandNode<S> {
         this.literalLowerCase = literal.toLowerCase(Locale.ROOT);
     }
 
+    /**
+     * Returns the literal this command represents.
+     *
+     * @return the literal this command represents
+     */
     public String getLiteral() {
         return literal;
     }
