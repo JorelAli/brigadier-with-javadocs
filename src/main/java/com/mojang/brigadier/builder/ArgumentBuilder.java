@@ -21,7 +21,11 @@ import java.util.function.Predicate;
  * @param <S> the type of the command source
  * @param <T> the type of the builder. Used to realize an emulated self type
  */
-public abstract class ArgumentBuilder<S, T extends ArgumentBuilder<S, T>> {
+public abstract class ArgumentBuilder<S, T
+/// @cond DOX
+extends ArgumentBuilder<S, T>
+/// @endcond
+> {
     private final RootCommandNode<S> arguments = new RootCommandNode<>();
     private Command<S> command;
     private Predicate<S> requirement = s -> true;
