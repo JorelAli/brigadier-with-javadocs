@@ -1,3 +1,14 @@
+# brigadier-with-javadocs
+
+A fork of [Mojang/brigadier](https://github.com/Mojang/brigadier), with the JavaDocs from [I-Al-Istannen/brigadier](https://github.com/I-Al-Istannen/brigadier)'s [docs branch](https://github.com/I-Al-Istannen/brigadier/tree/docs). Also includes some other changes:
+
+- More up-to-date with [Mojang/brigadier](https://github.com/Mojang/brigadier)'s master branch
+- Doesn't suffer from [Doxygen's JavaDocs bug](https://github.com/doxygen/doxygen/issues/8495) where generic parameters that extend another generic makes all methods disappear
+
+Original README.md below:
+
+-----
+
 # Brigadier [![Latest release](https://img.shields.io/github/release/Mojang/brigadier.svg)](https://github.com/Mojang/brigadier/releases/latest) [![License](https://img.shields.io/github/license/Mojang/brigadier.svg)](https://github.com/Mojang/brigadier/blob/master/LICENSE)
 
 Brigadier is a command parser & dispatcher, designed and developed for Minecraft: Java Edition and now freely available for use elsewhere under the MIT license.
